@@ -13,3 +13,32 @@ But seeing as the version of Quick sort we chose uses the lowest element as a pi
 
 3.Worst case: O(n^2). If the pivots are located in the beggining of a list(like with an already sorted array), then quicksort will be inneficient since. It would make a lot more partitions than it has to and would essentially run the partition algorithm on succesively smaller upper halves of the partitions (so n+ n-1 + n-2 +... = O(n^2)). 
 
+
+GOAL: Test the runtime of QuickSort
+
+##The algorithm is set up with the following:
+1)There is a method that writes a random array of any specified length, and there is a method that uses that as a helper to writes a 2 dimensional array (int[][]) containing arrays of size 1 to n, where n is specified. 
+
+2)There is a method that finds the runtime in nanoseconds for each of these arrays a specified number of times, and then averages it. 
+
+3)These averages are then put into an array, so that the indices match with the 2D array.
+
+4)The length of the list, and the average runtime is then written to a csv file for easier access.
+
+
+###Specifics:
+Generates a two dimensional array, that contains randomly generated arrays from size 1 to 1000. 
+
+Generates a new array with corresponding indices to the previous 2D array that takes the average runtime for the corresponding array at each index run 100 times.
+
+Export sthis information as a csv file for easy viewing off the command line.
+
+
+##ANALYSIS:
+Sorting through quicksort gave graphs that were very clearly growing faster than a linear. Whether they grew faster or slower than a quadratic is a bit difficult to see, but the graph does a decent job of showing that too. It looks to be O(nlogn) based on that charts, and this matches up with the hypothesis we had initally.
+
+
+See our graphical data over [here](https://docs.google.com/document/d/1fRpI9wqXtwip9l6MJUjfgE-yfD5Q0b5uuUHvEBd72HU/pub)
+
+If the links are broken, they are repeated below:
+https://docs.google.com/document/d/1fRpI9wqXtwip9l6MJUjfgE-yfD5Q0b5uuUHvEBd72HU/pub
