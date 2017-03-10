@@ -1,4 +1,4 @@
-# NorthAmericanX-15 (Borisov N., Jahad I., Lum J.)
+# NorthAmericanX-15 (Borisov N., Jahan I., Lum J.)
 # The big-O runtime of QuickSort:
 1.Average case: O(nlogn). The quicksort algorithm has to make a tree of recursive calls. The partition algorithm has a linear 
 runtime corresponding do the size of the partitioned piece of the array being worked with. An array of size n, is partitioned(in n time)
@@ -11,5 +11,5 @@ their respective recursive calls. Each partition is rougly n/2^k long so the par
 layers of recursive calls and run the partition algorithm still has to run in linear time. 
 But seeing as the version of Quick sort we chose uses the lowest element as a pivot, it would best to have an array that has medium sized elements in the begining(since then the pivots would land in the middle of their respective partitions).
 
-3. Worst case: O(n^2). If the pivots are located in the beggining of a list(like with an already sorted array), then quicksort will be inneficient since. It would make a lot more partitions than it has to and would essentially run the partition algorithm on succesively smaller upper halves of the partitions (so n+ n-1 + n-2 +... = O(n^2)). 
+3.Worst case: O(n^2). If the pivots are located in the beggining of a list(like with an already sorted array), then quicksort will be inneficient since. It would make a lot more partitions than it has to and would essentially run the partition algorithm on succesively smaller upper halves of the partitions (so n+ n-1 + n-2 +... = O(n^2)). 
 
